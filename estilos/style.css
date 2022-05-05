@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+} 
+
+
+/*MOBILE FIRST*/
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+.wrapper{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "contenido"
+    "footer";
+}
+
+
+header, footer, nav{
+    display: grid;
+    justify-content: center;
+    background-color: maroon;
+    height: auto;
+    color:whitesmoke;
+    padding: 10px;
+    width:100%;
+}
+
+nav ul{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.logo img{
+    width: 90%;
+}
+
+nav ul {
+    margin: 5px;
+}
+nav ul li{
+    list-style: none;
+    text-transform: uppercase;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+.menu li a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 1px;
+    margin-right: 1px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-style: outset;
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+    }
+
+
+.redesSociales{
+    display:flex;
+    justify-content: center;
+
+}
+
+.redesSociales figure{
+    padding-left: 2rem;
+}
+
+.copyRight{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:11px;
+    text-align: center;
+}
+
+
+
+.main-header{
+    grid-area: header;
+}
+
+.main-nav{
+    grid-area: nav;
+}
+
+.contenido{
+    grid-area: contenido;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.textoMain{
+    grid-area: texto;
+    margin: 1rem;
+}
+
+.imagenTexto{
+    grid-area: imagen;
+}
+
+h1{
+    color: maroon;
+    font-family: 'Roboto Mono', monospace;
+    padding: 10px;
+}
+
+h2{
+    color: rgb(185, 19, 19);
+    padding: 10px;
+
+} 
+
+
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    padding-top: 1rem;
+}
+
+.imagenTexto img{
+    margin:1rem;
+    width: 90%;
+}
+
+
+@media (min-width:500px){
+   .contenido{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-areas: 
+    "texto imagen";
+    align-items: center;
+   }
+
+   .textoMain{
+       margin-left: 1rem;
+       margin-right:0rem;
+   }
+
+   .imagenTexto{
+       width: 100%;
+       margin-left: 0;
+       align-self:center;
+   }
+}
+
+@media (min-width:1024px){
+    .main-header{
+        justify-content: start;
+    }
+
+    .main-nav{
+        justify-content: start;
+    }
+
+
+    .contenido{
+     display: grid;
+     grid-template-columns: 3fr 1fr;
+     grid-template-areas: 
+     "texto imagen";
+     align-items: end;
+    }
+ 
+    .textoMain{
+        margin-left: 1rem;
+        margin-right:0rem;
+    }
+ 
+    .imagenTexto {
+        height: 1fr;
+        margin-left: 0;
+        align-self: end;
+    }
+    footer{
+        justify-content: start;
+ 
+    }
+ }
+
+/*
+.menu li{
+    border-style: outset;
+    list-style:none;
+    margin-left: 5px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.header{
+    grid-area: header;
+    padding: 1rem;
+}
+
+.contenido{
+    grid-area: contenido;
+    padding-left: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.rubrik{
+    display: flex;
+    align-items: right;
+}
+
+.footer{
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color:maroon;
+
+}
+
+
+
+
+
+
+
+
+.redesSociales{
+    display:flex;
+    justify-content: flex-start;
+
+}
+
+.redesSociales figure{
+    padding-left: 2rem;
+}
+
+
+/* HEADER */
+
+/*
+header{
+    background-color:maroon;
+    height:auto;
+    width: 100%;
+    background-repeat:repeat ;
+    background-attachment: scroll;
+    position: sticky;
+    top: 0px;
+}
+
+
+
+nav ul li{
+    display: inline-block;
+    border-style: outset;
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 1rem;
+}
+
+/*
+/* MAIN */
+/*
+main{
+    background-color: whitesmoke;
+    height:100%;
+    width: 100%;
+    color:rgb(69, 69, 69)
+}
+
+
+h1{
+    color: maroon;
+    font-family: 'Roboto Mono', monospace;
+    padding: 10px;
+}
+
+h2{
+    color: rgb(185, 19, 19);
+    padding: 10px;
+
+} 
+
+
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    padding-top: 1rem;
+}
+
+
+table{
+    padding: 1rem;
+    width: fit-content;
+}
+
+table td{
+    padding-right: 5px;
+    padding-top: 1rem;
+}
+
+.tdMedia{
+    padding-right: 5px;
+    padding-left:1rem;
+    padding-top: 1rem;
+}
+
+form{
+    padding-top:1rem;
+    line-height:2rem;
+    
+}
+
+ form label {
+    margin: 1rem;
+
+}
+
+form textarea {
+    margin-left:1rem;
+    height:10rem;
+    width: 20rem;
+
+}
+
+form div {
+    margin-left: 1rem;
+}
+
+form input {
+    margin-left: 1rem;
+}
+
+.cuerpo{
+    padding: 1rem;
+}
+
+.caracteristicas li{
+    margin:1cm;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    list-style-type: "✔" ;
+    padding-left: 0.5cm;
+}
+
+
+.scout li{
+    margin:1cm;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    list-style-type: "⚜";
+    padding-left: 0.5cm;
+    
+}
+
+.boldItalic{
+    font-weight: bold;
+    font-style: italic;
+}
+
+.rubrik img{
+    width: 600px;
+    padding:20px;
+}
+
+
+*/
+/* FOOTER */
+/*
+footer{
+    background-color:maroon;
+    color: whitesmoke;
+    height:auto;
+    width: 100%;
+}
+
+footer ul{
+    margin-left: 1rem;
+}
+
+footer ul li a{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    text-decoration:none;
+    color: white;
+}
+
+
+footer h3{
+    margin-top:1rem;
+    margin-left:1rem;
+}
+
+
+ul li{
+    list-style-type: none;
+
+}
+
+footer ul li{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.listaNombre{
+    padding-right: 1rem;
+}
+
+
+}*/
