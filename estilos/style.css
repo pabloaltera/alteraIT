@@ -101,11 +101,7 @@ nav ul li {
     grid-area: nav;
 }
 
-.contenido,
-.resp,
-.contacto,
-.servicios,
-.clientes {
+.contenido, .resp, .contacto, .servicios, .clientes {
     grid-area: contenido;
     display: flex;
     flex-direction: column;
