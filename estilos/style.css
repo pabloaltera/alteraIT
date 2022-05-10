@@ -6,8 +6,6 @@
 }
 
 
-/*MOBILE FIRST*/
-
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: justify;
@@ -27,9 +25,7 @@ body {
 }
 
 
-header,
-footer,
-nav {
+header, footer, nav {
     display: grid;
     justify-content: center;
     background-color: maroon;
@@ -75,7 +71,6 @@ nav ul li {
     padding-right: 5px;
 
 }
-
 
 .redesSociales {
     display: flex;
