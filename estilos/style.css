@@ -251,11 +251,11 @@ form textarea {
 }
 
 .cliente:hover {
-    transform: scale(110%);
+    transform: scale(1.1);
 }
 
 .cliente:active {
-    transform: scale(200%);
+    transform: scale(2);
 }
 
 
