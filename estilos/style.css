@@ -50,7 +50,6 @@ header, footer {
 }
 
 .copyRight {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 11px;
     text-align: center;
 }
@@ -148,7 +147,6 @@ h2 {
 
 
 p {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: justify;
     padding-top: 1rem;
 }
@@ -160,20 +158,12 @@ p {
 
 .caracteristicas li {
     margin: 1cm;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     list-style-type: "✔";
     padding-left: 0.5cm;
 }
 
 
 /*ANIMACIONES*/
-
-.boton:hover {
-    border-style: inset;
-    font-weight: 900;
-    background-color: white;
-    color: maroon;
-}
 
 .cliente:hover {
     transform: scale(1.1);
@@ -187,10 +177,10 @@ p {
 @media screen and (min-width:600px) {
     .contenido {
         display: grid;
-        grid-template-columns: 0.25fr 2fr 1fr 0.25fr;
+        grid-template-columns: 0.25fr 2fr 1fr;
         grid-template-areas:
-            ". titulos titulos ."
-            ". texto media .";
+            ". titulos titulos"
+            ". texto media ";
         align-items: end;
     }
 
