@@ -13,27 +13,10 @@
         "contenido"
         "footer";
 
-    header, footer {
-        display: grid;
-        background-color: $granate;
-        justify-content: center;
-        height: auto;
-        color: $blanquito;
-        padding: 10px;
-        width: 100%;
-    }
-
     .main-header {
         grid-area: header;
     }
 
-    .grilla {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        row-gap: 1rem;
-    }
     
     footer{ 
         .redesSociales a i{
@@ -54,6 +37,15 @@
     
 }
 
+header, footer {
+    display: grid;
+    background-color: $granate;
+    justify-content: center;
+    height: auto;
+    color: $blanquito;
+    padding: 10px;
+    width: 100%;
+}
 
 .contenido, .resp, .contacto, .servicios, .clientes {
     grid-area: contenido;
@@ -64,6 +56,14 @@
     gap: 1rem
 }
 
+
+.grilla {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 1rem;
+}
 
 
 
