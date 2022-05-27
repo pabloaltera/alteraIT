@@ -1,0 +1,37 @@
+.infoIzq {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border-style: hidden;
+    border-radius: 3rem;
+    padding: 2rem;
+    background-color: rgb(240, 172, 172);
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.infoDer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border-style: hidden;
+    border-radius: 3rem;
+    padding: 2rem;
+    background-color: rgb(240, 227, 227);
+}
+
+
+.media img {
+    margin: 1rem;
+    width: 90%;
+}
+
+.caracteristicas li {
+    margin: 1cm;
+    list-style-type: "✔";
+    padding-left: 0.5cm;
+}

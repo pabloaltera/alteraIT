@@ -1,0 +1,126 @@
+@import "variables";
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "contenido"
+        "footer";
+
+    header, footer {
+        display: grid;
+        background-color: $granate;
+        justify-content: center;
+        height: auto;
+        color: $blanquito;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .main-header {
+        grid-area: header;
+    }
+
+    .grilla {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        row-gap: 1rem;
+    }
+    
+    footer{ 
+        .redesSociales a i{
+            color: $blanco;
+            zoom: 200%;
+            padding: 5px 15px;
+        }
+        
+        .redesSociales a i:hover{
+            color:salmon;
+        }
+        
+        .copyRight {
+            font-size: 11px;
+            text-align: center;
+        }
+    }
+    
+}
+
+
+.contenido, .resp, .contacto, .servicios, .clientes {
+    grid-area: contenido;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem;
+    gap: 1rem
+}
+
+
+
+
+.titulos {
+    grid-area: titulos;
+}
+
+.texto {
+    grid-area: texto;
+    align-self: start;
+}
+
+.media {
+    grid-area: media;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.detalle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-area: detalle;
+}
+
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1 {
+    color: $granate;
+    font-family: 'Roboto Mono', monospace;
+    padding: 10px;
+}
+
+h2 {
+    color: $rojito;
+    padding: 10px;
+
+}
+
+
+p {
+    text-align: justify;
+    padding-top: 1rem;
+}
+
+
+
+.hamburguesa{
+    color: $blanco;
+    background-color: $blanco;    
+}
