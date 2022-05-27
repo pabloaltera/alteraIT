@@ -40,10 +40,10 @@
             color: $blanco;
             zoom: 200%;
             padding: 5px 15px;
-        }
-        
-        .redesSociales a i:hover{
-            color:salmon;
+            
+                &:hover{
+                    color:salmon;
+                }
         }
         
         .copyRight {
