@@ -23,8 +23,24 @@
   padding: 5px 15px;
 }
 
-.wrapper footer .redesSociales a i:hover {
-  color: salmon;
+.wrapper footer .fa-twitter:hover {
+  color: #55acee;
+}
+
+.wrapper footer .fa-facebook:hover {
+  color: #3a5795;
+}
+
+.wrapper footer .fa-instagram:hover {
+  color: #833AB4;
+}
+
+.wrapper footer .fa-youtube:hover {
+  color: red;
+}
+
+.wrapper footer .fa-linkedin:hover {
+  color: blue;
 }
 
 .wrapper footer .copyRight {
@@ -154,7 +170,7 @@ p {
   background-color: white;
 }
 
-.infoIzq {
+.info, .infoIzq, .infoDer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -172,29 +188,15 @@ p {
   border-style: hidden;
   border-radius: 3rem;
   padding: 2rem;
+}
+
+.infoIzq {
   background-color: #f0acac;
   margin-bottom: 2rem;
   margin-top: 2rem;
 }
 
 .infoDer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 1rem;
-  border-style: hidden;
-  border-radius: 3rem;
-  padding: 2rem;
   background-color: #f0e3e3;
 }
 

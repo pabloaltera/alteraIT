@@ -6,6 +6,7 @@
     margin: 0;
 }
 
+
 .wrapper {
     display: grid;
     grid-template-areas:
@@ -23,12 +24,14 @@
             color: $blanco;
             zoom: 200%;
             padding: 5px 15px;
-            
-                &:hover{
-                    color:salmon;
-                }
+
         }
-        
+
+        @each $name-color, $color in $colors {
+            .fa-#{$name-color}:hover{
+                color: $color;
+            }
+        }
         .copyRight {
             font-size: 11px;
             text-align: center;
@@ -50,8 +53,7 @@ header, footer {
 .contenido, .resp, .contacto, .servicios, .clientes {
     grid-area: contenido;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include dirJusti(column,center);
     margin: 1rem;
     gap: 1rem
 }
@@ -79,15 +81,13 @@ header, footer {
 .media {
     grid-area: media;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include dirJusti(column,center);
     align-items: center;
 }
 
 .detalle {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include dirJusti(column,center);
     grid-area: detalle;
 }
 
