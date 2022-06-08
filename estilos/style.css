@@ -205,7 +205,7 @@ p {
   background-color: #f0e3e3;
 }
 
-.media img {
+.mediaServ img {
   margin: 1rem;
   width: 400px;
 }
@@ -285,6 +285,10 @@ p {
         align-self: center;
   }
   .media img {
+    margin: 1rem;
+    width: 35vw;
+  }
+  .mediaServ img {
     margin: 1rem;
     width: 500px;
   }
@@ -380,9 +384,13 @@ p {
         -ms-grid-row-align: center;
         align-self: center;
   }
-  .media img {
+  .mediaServ img {
     margin: 1rem;
     width: 350px;
+  }
+  .media img {
+    margin: 1rem;
+    width: 30vw;
   }
   header, footer {
     -webkit-box-pack: start;
@@ -412,9 +420,13 @@ p {
         -ms-flex-align: center;
             align-items: center;
   }
-  .media img {
+  .mediaServ img {
     margin: 1rem;
     width: 500px;
+  }
+  .media img {
+    margin: 1rem;
+    width: 20vw;
   }
 }
 /*# sourceMappingURL=style.css.map */

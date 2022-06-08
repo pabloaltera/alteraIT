@@ -53,6 +53,10 @@
     }
     .media img {
         margin: 1rem;
+        width: 35vw;
+    }
+    .mediaServ img {
+        margin: 1rem;
         width: 500px;
     }
 }
@@ -127,10 +131,16 @@
         align-self: center;
     }
 
-    .media img {
+    .mediaServ img {
         margin: 1rem;
         width: 350px;
     }
+
+    .media img {
+        margin: 1rem;
+        width: 30vw;
+    }
+
 
     header, footer {
         justify-content: start;
@@ -155,8 +165,12 @@
         align-items: center;
     }
     
-    .media img {
+    .mediaServ img {
         margin: 1rem;
         width: 500px;
+    }
+    .media img {
+        margin: 1rem;
+        width: 20vw;
     }
 }
