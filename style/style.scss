@@ -51,6 +51,10 @@
         margin-left: 0;
         align-self: center;
     }
+    .media img {
+        margin: 1rem;
+        zoom: 100%;
+    }
 }
 
 
@@ -123,6 +127,11 @@
         align-self: center;
     }
 
+    .media img {
+        margin: 1rem;
+        zoom: 100%;
+    }
+
     header, footer {
         justify-content: start;
     }
@@ -144,5 +153,10 @@
         grid-template-areas:
             "media texto .";
         align-items: center;
+    }
+    
+    .media img {
+        margin: 1rem;
+        zoom: 100%;
     }
 }

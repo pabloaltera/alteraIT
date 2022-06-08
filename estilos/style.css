@@ -61,6 +61,11 @@ header, footer {
   width: 100%;
 }
 
+header h3, footer h3 {
+  font-size: medium;
+  font-weight: bold;
+}
+
 .contenido, .resp, .contacto, .servicios, .clientes {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
@@ -202,7 +207,7 @@ p {
 
 .media img {
   margin: 1rem;
-  width: 90%;
+  zoom: 80%;
 }
 
 .caracteristicas li {
@@ -278,6 +283,10 @@ p {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
+  }
+  .media img {
+    margin: 1rem;
+    zoom: 100%;
   }
 }
 
@@ -371,6 +380,10 @@ p {
         -ms-grid-row-align: center;
         align-self: center;
   }
+  .media img {
+    margin: 1rem;
+    zoom: 100%;
+  }
   header, footer {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -398,6 +411,10 @@ p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .media img {
+    margin: 1rem;
+    zoom: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */

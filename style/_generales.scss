@@ -48,6 +48,10 @@ header, footer {
     color: $blanquito;
     padding: 10px;
     width: 100%;
+    h3{
+        font-size:medium;
+        font-weight: bold;
+    }
 }
 
 .contenido, .resp, .contacto, .servicios, .clientes {
