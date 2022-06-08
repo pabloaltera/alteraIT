@@ -207,7 +207,7 @@ p {
 
 .media img {
   margin: 1rem;
-  zoom: 80%;
+  width: 400px;
 }
 
 .caracteristicas li {
@@ -286,7 +286,7 @@ p {
   }
   .media img {
     margin: 1rem;
-    zoom: 100%;
+    width: 500px;
   }
 }
 
@@ -382,7 +382,7 @@ p {
   }
   .media img {
     margin: 1rem;
-    zoom: 100%;
+    width: 350px;
   }
   header, footer {
     -webkit-box-pack: start;
@@ -414,7 +414,7 @@ p {
   }
   .media img {
     margin: 1rem;
-    zoom: 100%;
+    width: 500px;
   }
 }
 /*# sourceMappingURL=style.css.map */
