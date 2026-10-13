@@ -1,0 +1,35 @@
+@import "variables";
+
+.info {
+    display: flex;
+    @include dirJusti(column,center);
+    align-items: center;
+    gap: 1rem;
+    border-style: hidden;
+    border-radius: 3rem;
+    padding: 2rem;
+}
+
+.infoIzq {
+    @extend .info;
+    background-color: rgb(240, 172, 172);
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.infoDer {
+    @extend .info;
+    background-color: rgb(240, 227, 227);
+}
+
+
+.mediaServ img {
+    margin: 1rem;
+    width: 350px;
+}
+
+.caracteristicas li {
+    margin: 1cm;
+    list-style-type: "✔";
+    padding-left: 0.5cm;
+}
