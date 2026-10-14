@@ -3,104 +3,396 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="AlteraIT los mejores Servicios Informaticos para empresas">
-    <meta name="keywords" content="INFORMATICA, SERVICIOS, JDE, CONSULTORIA, CONSULTOR, DESARROLLO">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    <meta name="description" content="AlteraIT - Servicios informáticos, consultoría JD Edwards, desarrollo de software y tecnología empresarial.">
+    <meta name="keywords" content="INFORMATICA, SERVICIOS, JDE, CONSULTORIA, CONSULTOR, DESARROLLO, SOFTWARE FACTORY, ERP">
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="author" content="Pablo Altera">
     <link rel="shortcut icon" href="./img/favicon.png" />
     <script src="https://kit.fontawesome.com/09f79d40f1.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="./estilos/style.css" />
-
-    <title>AlteraIT Servicios Informáticos</title>
+    <title>AlteraIT — Soluciones Tecnológicas</title>
 </head>
 
-<body>
-    <div class="wrapper">
-        <header class="main-header">        
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid gap-4">
-                    <a class="navbar-brand text-white " href="index.html">
-                        <img src="./img/alteraIT.png" alt="Logo de la empresa">
-                    </a>
-                    <button class="navbar-toggler hamburguesa" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon  bg-white"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link active text-white fw-bold " aria-current="page" href="./secciones/servicios.html">Servicios</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active text-white fw-bold " aria-current="page" href="./secciones/clientes.html">Clientes</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active text-white fw-bold " aria-current="page" href="./secciones/contacto.html">Contacto</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active text-white fw-bold " aria-current="page" href="./secciones/respSocial.html">Resp. Social</a>
-                            </li>
-                        </ul>
+<body class="wrapper">
+
+    <header class="main-header" role="banner">
+        <nav class="navbar navbar-expand-lg" aria-label="Navegación principal" role="navigation">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#inicio" aria-label="AlteraIT — Inicio">
+                    <span class="brand-mark">A</span>
+                    <span class="brand-text">AlteraIT</span>
+                </a>
+                <button class="navbar-toggler hamburguesa" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menú de navegación">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#clientes">Clientes</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#respSocial">Resp. Social</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content" role="main">
+
+        <!-- Hero / Landing Section -->
+        <section class="tech-hero" aria-label="Presentación de AlteraIT" id="inicio">
+            <div class="tech-grid">
+                <div class="tech-line tech-line-h"></div>
+                <div class="tech-line tech-line-v"></div>
+                <div class="tech-line tech-line-h"></div>
+            </div>
+
+            <div class="tech-hero-inner">
+                <div class="tech-label">SOLUCIONES INFORMÁTICAS</div>
+                <h1 class="tech-title">AlteraIT <span class="tech-sub">Solutions</span></h1>
+                <p class="tech-sub">Consultoría JD Edwards · Software Factory · Desarrollo de software · Gestión de proyectos</p>
+
+                <div class="tech-meta-grid">
+                    <div class="tech-meta-item">
+                        <div class="tech-meta-num">2006</div>
+                        <div class="tech-meta-label">Fundación</div>
+                    </div>
+                    <div class="tech-meta-item">
+                        <div class="tech-meta-num">2013</div>
+                        <div class="tech-meta-label">JD Edwards</div>
+                    </div>
+                    <div class="tech-meta-item">
+                        <div class="tech-meta-num">2022</div>
+                        <div class="tech-meta-label">Software Factory</div>
                     </div>
                 </div>
-            </nav>
-        </header>
-        <main>
-            <section class="contenido">
-                <div class="titulos">
-                    <h1>Altera IT Solutions</h1>
-                    <h2>La empresa</h2>
+
+                <div class="tech-cta-row">
+                    <a href="#servicios" class="tech-btn-primary" aria-label="Ver servicios de AlteraIT">Ver servicios</a>
+                    <a href="#contacto" class="tech-btn-secondary" aria-label="Contactar a AlteraIT">Contacto</a>
                 </div>
-                <div class="texto">
-                    <p>Altera IT Solutions surge en el año 2006 como un emprendimiento unipersonal de soluciones de
-                        tecnología
-                        de la información y reparación de equipos informáticos.
+            </div>
+        </section>
+
+        <!-- Servicios Section -->
+        <section class="tech-section" aria-label="Nuestros servicios" id="servicios">
+            <div class="tech-container">
+                <header class="section-header">
+                    <div class="tech-label">NUESTROS SERVICIOS</div>
+                    <h2 class="section-title">Soluciones integrales para tu empresa</h2>
+                    <div class="section-divider"></div>
+                    <p class="section-description">
+                        Ofrecemos soluciones completas en consultoría, desarrollo y gestión de proyectos
+                        para satisfacer todas las necesidades tecnológicas de tu organización.
                     </p>
-                    <p>
-                        A partir del año 2013 nos incorporamos al mercado de JD Edwards, sumando servicios de
-                        consultoría y
-                        administración de proyectos mediante un equipo interdisciplinario de profesionales expertos en
-                        las distintas
-                        áreas de interes de este ERP de clase mundial.
-                    </p>
-                    <p>
-                        Desde el año 2022 comenzamos a brindar servicios integrales de software factory con el objetivo
-                        de ofrecer a
-                        nuestros clientes soluciones integrales a las necesidades de negocio.
-                    </p>
-                    <p class="fw-bold fst-italic">
-                        Metodología, innovación tecnológica y talento humano en continua profesionalización y
-                        desarrollo,
-                        son nuestros valores que nos identifican.
-                    </p>
+                </header>
+
+                <div class="services-grid">
+                    <!-- Consultoría JD Edwards -->
+                    <article class="service-card">
+                        <div class="service-icon">01</div>
+                        <h3 class="service-title">Consultoría JD Edwards</h3>
+                        <p class="service-text">
+                            JD Edwards EnterpriseOne de Oracle es un ERP diseñado y desarrollado como una solución integral
+                            para medianas y grandes empresas. Permite gestionar, de acuerdo a las mejores prácticas, todos
+                            los procesos de una compañía: administrativos, operacionales, financieros y comerciales.
+                        </p>
+                        <ul class="service-features">
+                            <li>Único ERP abierto y multiplataforma</li>
+                            <li>Parametrizable y configurable</li>
+                            <li>Producto de Oracle en constante evolución</li>
+                            <li>ERP World Class con bajo costo de titularidad</li>
+                        </ul>
+                    </article>
+
+                    <!-- Project Management -->
+                    <article class="service-card">
+                        <div class="service-icon">02</div>
+                        <h3 class="service-title">Project Management</h3>
+                        <p class="service-text">
+                            Tomamos responsabilidad de liderar y gerenciar proyectos para lograr los resultados esperados
+                            por el negocio en tiempo y forma, con control total sobre resultados, plazos y calidad.
+                        </p>
+                        <ul class="service-features">
+                            <li>Conducción de actividades diarias del equipo</li>
+                            <li>Control de resultados, plazos y calidad</li>
+                            <li>Relación usuarios - equipo de trabajo</li>
+                            <li>Gestión de recursos y toma de decisiones operativas</li>
+                        </ul>
+                    </article>
+
+                    <!-- Soluciones a medida -->
+                    <article class="service-card">
+                        <div class="service-icon">03</div>
+                        <h3 class="service-title">Soluciones a Medida</h3>
+                        <p class="service-text">
+                            Mejoramos los procesos y su entorno para alcanzar los resultados esperados. Brindamos soluciones
+                            adaptadas a las exigencias de performance y confiabilidad de las empresas modernas.
+                        </p>
+                        <ul class="service-features">
+                            <li>Desarrollo mediante proyectos cerrados</li>
+                            <li>Entrega rápida de experiencias de software</li>
+                            <li>Staff Augmentation y outsourcing estratégico</li>
+                            <li>Soluciones orientadas a necesidades reales del negocio</li>
+                        </ul>
+                    </article>
+
+                    <!-- Desarrollo web -->
+                    <article class="service-card">
+                        <div class="service-icon">04</div>
+                        <h3 class="service-title">Desarrollo Web</h3>
+                        <p class="service-text">
+                            Desarrollamos aplicaciones enfocadas en su facilidad de uso, integrando múltiples plataformas
+                            técnicas y simplificando la extrema complejidad tecnológica. Hacemos simple lo complejo.
+                        </p>
+                        <ul class="service-features">
+                            <li>Soluciones web y aplicaciones móviles</li>
+                            <li>Orientadas a la usabilidad y adopción</li>
+                            <li>Integración transparente de plataformas</li>
+                            <li>Simplificación de complejidad tecnológica</li>
+                        </ul>
+                    </article>
                 </div>
-                <div class="media">
-                    <figure>
-                        <img class="rounded-5" src="./img/logoAltera.gif" alt="Imagen gif de un cubo rubrik con logo de compañía">
+            </div>
+        </section>
+
+        <!-- Clientes Section -->
+        <section class="tech-section" aria-label="Nuestros clientes" id="clientes">
+            <div class="tech-container">
+                <header class="section-header">
+                    <div class="tech-label">NUESTROS CLIENTES</div>
+                    <h2 class="section-title">Empresas que confían en nosotros</h2>
+                    <div class="section-divider"></div>
+                    <p class="section-description">
+                        Organizaciones de diversos sectores que han confiado en nuestra experiencia
+                        en soluciones tecnológicas especializadas.
+                    </p>
+                </header>
+
+                <div class="clientes-matrix">
+                    <figure class="cliente-item" data-delay="0">
+                        <img src="./img/qbit.png" alt="Logo Qbit" loading="lazy" class="cliente-logo" />
+                    </figure>
+                    <figure class="cliente-item" data-delay="100">
+                        <img src="./img/pilkington.png" alt="Logo Pilkington" loading="lazy" class="cliente-logo" />
+                    </figure>
+                    <figure class="cliente-item" data-delay="200">
+                        <img src="./img/bgh.png" alt="Logo Grupo BGH" loading="lazy" class="cliente-logo" />
+                    </figure>
+                    <figure class="cliente-item" data-delay="300">
+                        <img src="./img/essity.png" alt="Logo Essity Chile" loading="lazy" class="cliente-logo" />
+                    </figure>
+                    <figure class="cliente-item" data-delay="400">
+                        <img src="./img/copeval.png" alt="Logo Copeval Chile" loading="lazy" class="cliente-logo" />
+                    </figure>
+                    <figure class="cliente-item" data-delay="500">
+                        <img src="./img/capex.png" alt="Logo Capex" loading="lazy" class="cliente-logo" />
+                    </figure>
+                    <figure class="cliente-item" data-delay="600">
+                        <img src="./img/asociart.png" alt="Logo Asociart" loading="lazy" class="cliente-logo" />
+                    </figure>
+                    <figure class="cliente-item" data-delay="700">
+                        <img src="./img/pena.png" alt="Logo Grupo Peñaflor" loading="lazy" class="cliente-logo" />
+                    </figure>
+                    <figure class="cliente-item" data-delay="100">
+                        <img src="./img/stig.png" alt="Logo Stig" loading="lazy" class="cliente-logo" />
+                    </figure>
+                    <figure class="cliente-item" data-delay="200">
+                        <img src="./img/reimpex.png" alt="Logo Grupo Reimpex Paraguay" loading="lazy" class="cliente-logo" />
+                    </figure>
+                    <figure class="cliente-item" data-delay="300">
+                        <img src="./img/big.png" alt="Logo Bic" loading="lazy" class="cliente-logo" />
+                    </figure>
+                    <figure class="cliente-item" data-delay="400">
+                        <img src="./img/ilva.png" alt="Logo ILVA" loading="lazy" class="cliente-logo" />
                     </figure>
                 </div>
-            </section>
-        </main>
-        <footer class="footer">
-            <h3 class="pt-2">Seguinos en nuestras redes sociales</h3>
+            </div>
+        </section>
+
+        <!-- Contacto Section -->
+        <section class="tech-section" aria-label="Información de contacto" id="contacto">
+            <div class="tech-container">
+                <header class="section-header">
+                    <div class="tech-label">CONTACTO</div>
+                    <h2 class="section-title">Hablemos de tu proyecto</h2>
+                    <div class="section-divider"></div>
+                    <p class="section-description">
+                        ¿Querés hacernos una consulta? ¿Te interesaría que te ayudemos en tu proyecto?
+                        ¿Querés recibir más información sobre nosotros? No dudes en escribirnos y te contactaremos a la brevedad.
+                    </p>
+                </header>
+
+                <div class="contact-wrapper">
+                    <iframe 
+                        class="contact-form" 
+                        src="https://docs.google.com/forms/d/e/1FAIpQLSdG5oQPUx-4n7UHBgJLb-vFF-pFfr7F5U75edmgleHiJpFXtA/viewform?embedded=true" 
+                        frameborder="0" 
+                        marginheight="0" 
+                        marginwidth="0"
+                        title="Formulario de contacto AlteraIT"
+                        loading="lazy">
+                        Cargando formulario…
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Responsabilidad Social Section -->
+        <section class="tech-section" aria-label="Responsabilidad Social de AlteraIT" id="respSocial">
+            <div class="tech-container">
+                <header class="section-header">
+                    <div class="tech-label">RESPONSABILIDAD SOCIAL</div>
+                    <h2 class="section-title">Trabajamos con valores</h2>
+                    <div class="section-divider"></div>
+                </header>
+
+                <div class="resp-content">
+                    <div class="resp-text">
+                        <p>
+                            En Altera IT Solutions adherimos a los valores del Movimiento Scout Mundial, creyendo firmemente
+                            en generar y ser agentes de cambio para dejar el mundo en mejores condiciones de cómo lo
+                            encontramos. De esta manera la empresa, en conjunto con grupos scouts, genera continuamente acciones de:
+                        </p>
+                        <p>
+                            <strong>Jornadas de donación de sangre</strong> destinadas a ayudar en el tratamiento de pacientes hospitalarios
+                            con padecimientos de alta y mediana complejidad.
+                        </p>
+                        <p>
+                            Nos sumamos a los <strong>programas de reciclado</strong> de papel, plástico, metal y vidrio de los Grupos
+                            Scouts, que tienen como objetivo la obtención de recursos económicos para el mantenimiento de sus
+                            actividades y compra de materiales didácticos y de campismo.
+                        </p>
+                        <p>
+                            Alentamos el uso de <strong>recursos y energías renovables</strong>.
+                        </p>
+                        <p>
+                            <strong>¡Fomentamos la camaradería y el trabajo en equipo!</strong><br>
+                            Uno de los valores fundamentales del movimiento scout es la camaradería y la hermandad, nosotros
+                            creemos firmemente en que la aplicación de estos principios aportan en mejorar la calidad del
+                            ambiente y las condiciones de trabajo. Los equipos de trabajo de la empresa siguen el conocido
+                            <em>"Sistema de Patrullas"</em> que promueve el liderazgo y la participación democrática de los miembros
+                            del equipo.
+                        </p>
+                    </div>
+                    <div class="resp-image">
+                        <figure>
+                            <img src="./img/scout.png" alt="Logo Organización Mundial Scout" class="tech-img" loading="lazy" />
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer tech-footer" role="contentinfo">
+        <div class="footer-content">
+            <h3 class="mb-3">Seguinos</h3>
             <div class="redesSociales">
-                <a href="https://www.linkedin.com/company/altera-it-solutions"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://www.instagram.com/AlteraIT/"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.facebook.com/AlteraIT/"><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://www.youtube.com/channel/AlteraIT"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.linkedin.com/company/altera-it-solutions" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/AlteraIT/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/AlteraIT/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.youtube.com/channel/AlteraIT" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
             </div>
             <div class="copyRight">
-                <p>
-                    © Copyright 2022 Pablo Altera <br />
-                    Todos los derechos reservados, prohibida su reproducción con fines
-                    comerciales.
-                </p>
+                <p>© Copyright 2022 Pablo Altera<br>Todos los derechos reservados, prohibida su reproducción con fines comerciales.</p>
             </div>
-        </footer>
-    </div>
+        </div>
+    </footer>
+
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <!-- Custom JavaScript for interactivity -->
+    <script>
+        // Mobile menu toggle
+        const navbarToggler = document.querySelector('.navbar-toggler');
+        const navbarCollapse = document.querySelector('#navbarNav');
+        if (navbarToggler && navbarCollapse) {
+            navbarToggler.addEventListener('click', () => {
+                const expanded = navbarToggler.getAttribute('aria-expanded') === 'true' || false;
+                navbarToggler.setAttribute('aria-expanded', !expanded);
+            });
+            const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    if (window.innerWidth < 992) {
+                        new bootstrap.Collapse(navbarCollapse).hide();
+                    }
+                });
+            });
+        }
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Scroll animation for client logos
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.cliente-item').forEach(item => {
+            observer.observe(item);
+        });
+
+        // Scroll animation for service cards
+        const serviceObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }, index * 100);
+                    serviceObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.service-card').forEach(card => {
+            serviceObserver.observe(card);
+        });
+
+        // Highlight active nav link based on scroll position
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+        function highlightNav() {
+            let scrollPos = window.scrollY + 80;
+            sections.forEach(section => {
+                const top = section.offsetTop - 100;
+                const bottom = top + section.offsetHeight;
+                const id = section.getAttribute('id');
+                if (scrollPos >= top && scrollPos <= bottom && id) {
+                    navLinks.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === '#' + id) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        }
+        window.addEventListener('scroll', highlightNav);
+        window.addEventListener('load', highlightNav);
+    </script>
 </body>
 
 </html>
